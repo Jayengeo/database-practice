@@ -9,3 +9,10 @@ CREATE TABLE students (
     cohort_id INTEGER REFERENCES cohorts(id) ON DELETE CASCADE
 ); 
 
+CREATE TABLE cohorts ( 
+    id SERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(225) NOT NULL, 
+    start_date Date, 
+    end_date Date, 
+   
+); 
